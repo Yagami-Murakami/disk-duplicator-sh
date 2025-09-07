@@ -53,3 +53,40 @@ Para instalar as dependências em sistemas baseados em **Debian/Ubuntu**:
 ```bash
 sudo apt update
 sudo apt install -y coreutils util-linux zstd pv
+
+Clone o Repositório
+
+git clone [https://github.com/Yagami-Murakami/disk-duplicator-sh.git](https://github.com/Yagami-Murakami/disk-duplicator-sh.git)
+cd disk-duplicator-sh
+
+Execute o Script
+
+O script precisa de permissões de root para acessar os discos diretamente.
+sudo ./disk-duplicator.sh
+
+
+Após a execução, um menu interativo irá guiá-lo pelas opções disponíveis.
+
+🙏 Como Contribuir
+Contribuições são muito bem-vindas! Se você tem uma ideia para melhorar o script, encontrou um bug ou quer adicionar uma nova funcionalidade:
+
+Faça um Fork do projeto.
+
+Crie uma nova Branch: git checkout -b feature/sua-feature.
+
+Faça o Commit das suas alterações: git commit -m 'Adiciona sua-feature'.
+
+Faça o Push para a Branch: git push origin feature/sua-feature.
+
+Abra um Pull Request.
+
+📄 Licença
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+<div align="center">
+Feito com ❤️ por <a href="https://github.com/Yagami-Murakami">Yagami Murakami</a>
+</div>
+<br>
+<hr>
+<br>
+<a name="-disk-duplicator-sh-en"></a>
