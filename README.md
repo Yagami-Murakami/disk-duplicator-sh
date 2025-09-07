@@ -82,11 +82,3 @@ Abra um Pull Request.
 
 📄 Licença
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-<div align="center">
-Feito com ❤️ por <a href="https://github.com/Yagami-Murakami">Yagami Murakami</a>
-</div>
-<br>
-<hr>
-<br>
-<a name="-disk-duplicator-sh-en"></a>
