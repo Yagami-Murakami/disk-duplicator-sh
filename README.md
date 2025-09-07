@@ -10,9 +10,9 @@ Uma ferramenta de linha de comando poderosa e segura para clonagem, backup (imag
 
 ## 🚀 Demonstração
 
-*(Dica: Grave um GIF rápido do script em ação usando um programa como o [Peek](https://github.com/phw/peek) e coloque aqui para impressionar!)*
 
-![Demonstração do Script](https://i.imgur.com/your-image-url.gif) 
+
+![Demonstração do Script]([https://i.imgur.com/your-image-url.gif](https://i.imgur.com/P2zUhOs.gif)) 
 
 ---
 
