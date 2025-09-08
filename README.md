@@ -82,3 +82,77 @@ Abra um Pull Request.
 
 📄 Licença
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+---
+## 🇬🇧 English Version
+
+### 🚀 Demonstration
+
+![Script Demonstration](https://i.imgur.com/P2zUhOs.gif)
+
+---
+
+### 🤔 Why use Disk Duplicator SH?
+
+Tools like `dd` are extremely powerful, but also dangerous. A single typo (`/dev/sda` instead of `/dev/sdb`) can result in total data loss.
+
+This script acts as a **safety and convenience layer** on top of `dd`, featuring an interactive menu and multiple confirmations to ensure you are performing the right operation on the right disk.
+
+---
+
+### ✅ Key Features
+
+-   ✅ **Image Creation & Restoration**: Create full backups of your disks (`.img`) and restore them safely.
+-   ✅ **Direct Disk Cloning**: Clone one hard drive or SSD directly to another, ideal for system migrations.
+-   ✅ **Efficient Compression**: Optional support for `zstd` compression, a modern and fast algorithm that saves space and time.
+-   ✅ **Safety First**: Multiple checks to prevent catastrophic errors:
+    -   Prevents cloning a disk onto itself.
+    -   Checks if the destination disk is not smaller than the source.
+    -   Requires explicit confirmation by typing the destination disk's name before erasing any data.
+-   ✅ **User-Friendly Interface**: An interactive and colorful menu that guides the user through every step.
+-   ✅ **Integrity Check**: Generates and verifies `SHA-256` hashes to ensure your disk images are not corrupted.
+-   ✅ **Progress Bar**: Uses `pv` (Pipe Viewer), if installed, to display a detailed progress bar.
+
+---
+
+### 🔧 Installation and Usage
+
+> **⚠️ WARNING**: This script performs low-level disk operations. Use it with extreme caution. Backing up your important data is always recommended before any disk operation. The author is not responsible for any data loss.
+
+#### 1. Prerequisites
+
+The script relies on a few common Linux tools, most of which are likely pre-installed: `bash`, `dd`, `lsblk`, `sha256sum`, and `blockdev`.
+
+**Optional dependencies** for extra features are `zstd` (for compression) and `pv` (for a progress bar).
+
+To install all dependencies on Debian/Ubuntu-based systems:
+
+```bash
+sudo apt update
+sudo apt install -y coreutils util-linux zstd pv
+
+git clone [https://github.com/Yagami-Murakami/disk-duplicator-sh.git](https://github.com/Yagami-Murakami/disk-duplicator-sh.git)
+cd disk-duplicator-sh
+
+The script requires root privileges to access disks directly.
+
+sudo ./disk-duplicator.sh
+
+Once executed, an interactive menu will guide you through the available options.
+
+🙏 How to Contribute
+Contributions are very welcome! If you have an idea to improve the script, find a bug, or want to add a new feature:
+
+Fork the project.
+
+Create a new Branch: git checkout -b feature/your-feature
+
+Commit your changes: git commit -m 'Adds your-feature'
+
+Push to the Branch: git push origin feature/your-feature
+
+Open a Pull Request.
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
