@@ -158,6 +158,47 @@ Open a Pull Request.
 This project is licensed under the MIT License. See the LICENSE file for more details
 
 
+🇬🇧 English Version
+🚀 Demonstration
+An image or GIF demonstrating the script would go here.
+
+![Script Demonstration](https://i.imgur.com/P2zUhOs.gif)
+🤔 Why use Disk Duplicator SH?
+Tools like dd are extremely powerful, but also dangerous. A single typo (/dev/sda instead of /dev/sdb) can result in total data loss.
+
+This script acts as a safety and convenience layer on top of dd, featuring an interactive menu and multiple confirmations to ensure you are performing the right operation on the right disk.
+
+✅ Key Features
+✅ Image Creation & Restoration: Create full backups of your disks (.img) and restore them safely.
+
+✅ Direct Disk Cloning: Clone one hard drive or SSD directly to another, ideal for system migrations.
+
+✅ Efficient Compression: Optional support for zstd compression, a modern and fast algorithm that saves space and time.
+
+✅ Safety First: Multiple checks to prevent catastrophic errors:
+
+Prevents cloning a disk onto itself.
+
+Checks if the destination disk is not smaller than the source.
+
+Requires explicit confirmation by typing the destination disk's name before erasing any data.
+
+✅ User-Friendly Interface: An interactive and colorful menu that guides the user through every step.
+
+✅ Integrity Check: Generates and verifies SHA-256 hashes to ensure your disk images are not corrupted.
+
+✅ Progress Bar: Uses pv (Pipe Viewer), if installed, to display a detailed progress bar.
+
+🔧 Installation and Usage
+⚠️ WARNING: This script performs low-level disk operations. Use it with extreme caution. Backing up your important data is always recommended before any disk operation. The author is not responsible for any data loss.
+
+1. Prerequisites
+The script relies on a few common Linux tools, most of which are likely pre-installed: bash, dd, lsblk, sha256sum, and blockdev.
+
+Optional dependencies for extra features are zstd (for compression) and pv (for a progress bar).
+
+To install all dependencies on Debian/Ubuntu-based systems:
+
 
 
 
